@@ -53,16 +53,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\XtraBaiduUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\XtraBaiduUp.Designer.cs">
+      <DependentUpon>XtraBaiduUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XtraBaiduFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\XtraBaiduFlow.Designer.cs">
+      <DependentUpon>XtraBaiduFlow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -74,6 +86,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\XtraBaiduUp.resx">
+      <DependentUpon>XtraBaiduUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XtraBaiduFlow.resx">
+      <DependentUpon>XtraBaiduFlow.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
